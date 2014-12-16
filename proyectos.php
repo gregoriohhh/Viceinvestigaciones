@@ -1,22 +1,18 @@
 <?php
 	require('conexion.php');
 	
-	$query="SELECT id,titulo,investigador,fecha,duracion FROM proyectos";
-	$resultado=$mysqli->query($query);
+	$query="SELECT id FROM proyectos";
 	
+	$resultado=$mysqli->query($query);
 	
 ?>
 <!DOCTYPE=html>
 <html lan="es">
 	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
 		<title>proyectos</title>
 		<link rel="stylesheet"  href="css/normalize.css">
 		<link rel="stylesheet"  href="css/estilos_proyectos.css" >
-		<title>El primer script</title>
- 		<script type="text/javascript">
- 			alert("Se deben entregar informes parciales ");
-		</script>
 	</head>
 	<body>
 		<header>
@@ -33,36 +29,43 @@
 				#">Proyectos</a></li>
 			</ul>
 		</nav>
-		<div class="CSSTableGenerator" l>
-		<table overflow:scrol>
-			<tr>
-				<td><b>N°</b></td>
-				<td colspan="2"><b>Título Proyecto</b></td>
-				<td><b>Inv. Principal</b></td>
-				<td><b>F. Inicio</b></td>
-				<td><b>Duración</b></td>
-			
-			</tr>
-				<?php while($row=$resultado->fetch_assoc()){ ?>
-					<tr>
-						<td><?php echo $row['id'];?>
-						</td>
-						<td colspan="2"><?php echo $row['titulo'];?>
-						</td>
-						<td><?php echo $row['investigador'];?>
-						</td>
-						<td><?php echo $row['fecha'];?>
-						</td>
-						<td><?php echo $row['duracion'];?>
-						</td>		
-					</tr>
-				<?php } ?>
+
+
+	<center><h1 >Proyectos</h1></center>	
+		<table border=1 width="80%">
+			<thead>
+				<tr>
+					<td><b>N°</b></td>
+					<td><b>Email</b></td>
+					<td><b>N°</b></td>
+					<td><b>Email</b></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tbody>
+					<?php while($row=$resultado->fetch_assoc()){ ?>
+						
+						<tr>
+							<td><?php echo $row['id'];?>
+							</td>
+							<td>
+								<?php echo $row['email'];?>
+							</td>
+														</td>
+							<td>
+								<a href="modificar.php?id=<?php echo $row['id'];?>">Modificar</a>
+							</td>
+							<td>
+								<a href="eliminar.php?id=<?php echo $row['id'];?>">Eliminar</a>
+							</td>
+						</tr>
+					<?php } ?>
 				</tbody>
 			</table>	
-			</div>
-		</body>
+			
 	<footer>
 		<strong><p>Powered by Gregorio Hernandez</p></strong>
 		<strong><p>    Todos los derechos reservados © 2014</p></strong>
 	</footer>
+	</body>
 </html>
