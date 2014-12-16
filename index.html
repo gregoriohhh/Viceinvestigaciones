@@ -1,0 +1,91 @@
+	<!DOCTYPE html>
+	<html lan="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Vicerrector&iacute;a de Investigaciones</title>
+		<link rel="stylesheet"  href="css/normalize.css">
+		<link rel="stylesheet"  href="css/estilos.css" >
+		
+		<script language="JavaScript">
+			function pregunta(){
+    			if (confirm('¿Estas seguro de enviar este formulario?')){
+       			document.tuformulario.submit()
+   				 }
+			}
+</script> 
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="image/logo.png"></figure>
+				<h1>Vicerrectoría de Investigaciones
+					<br>
+					Universidad del Quindío</h1>
+	</header>
+	<nav>
+		<ul>
+		<li><a href=#
+			"#">Nuevo</a></li>
+		<li><a href="proyectos.html">Proyectos</a></li>
+		</ul>
+	</nav>
+		<section id="agregar_Proyecto">
+			
+		<div id="contact-form">  
+			
+			<form method="post" action="guarda_usuario.php">  
+				<label for="numero">Proyecto N°: <span class="required">*</span></label>  
+				<input type="number" id="numero" name="id" value="" placeholder="0" required="required" autofocus="autofocus" min="1"/> 
+				<label for="facultad">Facultad: <span class="required">*</span></label> 
+				<datalist id="facultades">
+					<option value="Facultad de Ciencias de la salud">
+					<option value="Facultad de Ingeniería">
+					<option value="Facultad de Ciencias Básicas y Tecnologías">
+					<option value="Facultad de Ciencias Humanas y Bellas Artes">
+					<option value="Facultad de Ciencias Agroindustriales">
+					<option value="Facultad de Educación">
+					<option value="Facultad de Ciencias ecoómicas y administrativas">
+				</datalist>
+				<!-- Asociamos al input la datalist 'listas' -->
+				<input name="facultad" list="facultades" placeholder=" Seleccione la facultad" required="required" autofocus="autofocus"/>
+				<label for="programa">Programa: <span class="required">*</span></label>  
+				<input type="text" id="programa" name="programa" value="" placeholder="Escriba el nombre del programa" required="required" />  
+
+				<label for="grupo">Grupo de Investigación: <span class="required">*</span></label>  
+				<input type="text" id="grupo" name="grupo" value="" placeholder="Escriba el nombre del Grupo" required="required" />  
+
+				<label for="titulo">Título Proyecto: <span class="required">*</span></label>  
+				<textarea id="titulo" name="titulo" placeholder="Escriba el titulo del proyecto" class="required">
+				</textarea>  
+
+
+				<label for="investigador_principal">Investigador Principal: <span class="required">*</span></label>  
+				<input type="text" id="investigador_principal" name="investigador" value="" placeholder="Investigador Principal" required="required" /> 
+
+				<label for="email">E-mail:<span class="required">*</span></label>  
+	     		<input type="email" id="email" name="email" value="" placeholder="your@uniquindio.edu.co" required="required"/> 
+	     		
+	     		<label for="fecha_Inicio">Fecha Inicio:<span class="required">*</span></label>  
+	     		<input type="date" id="fecha_Inicio" name="fecha"  step="1" min="2010-01-01" max="2020-12-31" value="2013-01-01" />
+
+	     		<label for="duracion">Duración (Meses) : <span class="required">*</span></label>  
+				<input type="number" id="duracion" name="duracion"  placeholder="" required="required" autofocus="autofocus" min="6" /> 
+
+
+				<input type="submit" value="Enviar" id="submit" onclick="pregunta()" />
+
+			</form>  
+		</div>
+	</section>
+
+	<section>
+
+	</section>
+
+		<footer>
+			<strong><p>Powered by Gregorio Hernandez</p></strong>
+
+			<strong><p>    Todos los derechos reservados © 2014</p></strong>
+		</footer>
+		</body>
+	</html>

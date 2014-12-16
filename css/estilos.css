@@ -1,0 +1,159 @@
+		a{
+			color: #22BCE0;
+		}
+
+		body
+		{
+			background: #333;
+			color: #4C4C4C;
+			font-family: Arial;
+			font-size: 16px;
+			margin: 0;
+		}
+
+		header
+		{
+			padding-top: 0.2em;
+			background: #24A041;
+			text-align: center;
+			padding: 0.5em;
+		}
+		header h1{
+			font-size: 1.2em;
+			font-weight: normal;
+			margin: 0 0 0 0 ;
+		}
+		header #logo img{
+			width: 50px;
+			
+
+		}
+		/**
+		**/
+		#agregar_Proyecto{
+
+		}
+		#logo{
+			text-align: left;
+			}
+
+
+
+		#contact-form {  
+			background-color: #24A041;
+			width: 485px;  
+			padding: 20px;  
+			margin: 50px auto;  
+			border-radius: 15px;    
+			-moz-border-radius: 15px;  
+			-webkit-border-radius: 15px;  
+		}
+
+		#contact-form input,  
+		#contact-form select,  
+		#contact-form textarea,  
+		#contact-form label {  
+			font-size: 15px;  
+			margin-bottom: 2px;
+			font-family: Arial, san-serif;
+		}  
+
+		#contact-form input,  
+		#contact-form select,  
+		#contact-form textarea {  
+			width: 470px;
+			background: #fff;
+			border: 0;
+			-moz-border-radius: 5px;  
+			-webkit-border-radius: 5px;  
+			border-radius: 5px;
+			margin-bottom: 25px;  
+			padding: 5px; 
+
+		}  
+
+		#contact-form input:focus,  
+		#contact-form select:focus,  
+		#contact-form textarea:focus {  
+			background-color: #E5E6E7;
+		}  
+
+		#contact-form textarea {  
+			height: 75px;  		
+		}  
+
+		#contact-form #submit {  
+			width: 485px;  
+			color: black;  
+			border: none;  
+			background-color: #6EA070;
+		}  
+
+		#contact-form #submit:hover {  
+			background-color: #BFD7C1;  
+			color: #6EA070;
+		}
+
+		#failure, #success {
+			color: #6EA070;
+			display:none;  
+		}
+
+
+		nav{
+			background:#20912D; 
+			padding:0 0.5em;
+			box-shadow: rgba(0,0,0,,0.5) 0px 0px 10px;
+		}
+
+		nav ul{
+			list-style: none;
+			margin: 0;
+			padding:0;
+		}
+
+		nav ul li{
+			display: inline-block;
+			margin: 0 1..2em 0 0;
+		}
+
+		nav ul li a{
+			color: white;
+			display: block;
+			padding: 0.5em 0;
+		}
+
+		footer
+		{
+		background: #24A041;
+		color: rgba(255,255,255,0.7);
+		padding: 1em;
+		text-align: center;
+		clear: both;
+		}
+	footer p:first-child
+		{	
+		margin-bottom: 0;
+		}
+	footer p:last-child
+		{
+		margin-top: 0;
+		}
+
+		footer p:last-child:after
+		{
+		content: "-"
+		}
+
+		footer p:last-child:before{
+		content: "-"
+		}
+
+		footer a{
+			color: white;
+
+		}
+		
+
+		
+		
