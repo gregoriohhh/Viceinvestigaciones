@@ -7,13 +7,10 @@
 	$investigador=$_POST['investigador'];
 	$fecha=str_replace('/', '-', $_POST['fecha']);
 	$duracion=$_POST['duracion'];
-
-
-	
-	
 	$query="INSERT INTO proyectos (id, titulo, investigador, fecha, duracion) VALUES ('$id','$titulo','$investigador','$fecha','$duracion')";
-	
 	$resultado=$mysqli->query($query);
+	
+	echo '<script type="text/javascript>alert('mostrar mi ventana popup');</script>"'  
 	
 	?>
 <html>
@@ -30,9 +27,9 @@
 			
 
 			<?php if($resultado>0){ ?>
-				<h1>Usuario Guardado</h1>
+				<h1>Proyecto Guardado</h1>
 				<?php }else{ ?>
-				<h1>Error al Guardar Usuario</h1>		
+				<h1>Error al Guardar Proyecto</h1>		
 			<?php	} ?>		
 			
 			<p></p>	
